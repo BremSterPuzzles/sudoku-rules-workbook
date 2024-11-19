@@ -1,0 +1,3 @@
+• Killer: Digits in cages must sum to the number in the top left corner of the cage. Digits may not repeat within a cage.
+• Killer: Digits in cages must sum to the number in the top left corner of the cage.
+• Killer: Digits in cages must sum to the number in the top left corner of the cage, if given. Digits may not repeat within a cage.
