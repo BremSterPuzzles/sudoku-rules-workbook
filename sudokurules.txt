@@ -1,1 +1,151 @@
-Sudoku Rules
+For most rules, several options are provided, so that you can be as specific or general as required for the specific puzzle you are presenting.
+Some rules have different versions, the rules for the common different versions are provided.
+
+==================================================
+Grid Rules
+==========
+Use the one of these that is the most appropriate.
+
+• Normal Sudoku rules apply.
+
+• Normal Sudoku rules apply. Place the digits 1-9 in each row, column and box without repetition.
+
+• Normal Irregular Sudoku rules apply. Place the digits 1-9 in each row, column and marked region without repetition.
+
+• Normal Latin Square rules apply. Place the digits 1-9 in each row and column without repetition.
+
+==================================================
+Global Constraints
+==================
+
+• Anti-King: Cells that are a King's move apart (in chess) may not contain the same digit.
+
+• Anti-Knight: Cells that are a Knight's move apart (in chess) may not contain the same digit.
+
+• Disjoint: Cells in the same relative position in each 3x3 box may not contain the same digit.
+
+• Non-Consecutive: Digits in orthogonally adjacent cells may not be consecutive.
+
+==================================================
+Local Constraints
+=================
+
+• Arrow: Digits on an arrow must sum to the digit placed in that arrow's circle.
+• Arrow: Digits on an arrow must sum to the digit placed in that arrow's circle. Digits may repeat on an arrow if allowed by other rules.
+• Arrow: Digits on an arrow must sum to the number placed in that arrow's circle, or pill. The pill number must be read either left right, or top down.
+• Arrow: Digits on an arrow must sum to the number placed in that arrow's circle, or pill. The pill number must be read either left right, or top down. Digits may repeat on an arrow if allowed by other rules.
+
+
+• Between Lines: Digits on a line must be strictly between the digits placed in the circles at the ends of that line.
+
+
+• Cages: Digits in cages may not repeat and must sum to the number in the top left corner of the cage.
+• Cages: Digits in cages must sum to the number in the top left corner of the cage.
+• Cages: Digits in cages may not repeat and must sum to the number in the top left corner of the cage, if given.
+
+
+• Diagonal: Digits may not repeat along either of the marked diagonals.
+• Diagonal: Digits may not repeat along the marked diagonal.
+• Anti-Diagonal: Each of the main diagonals may only contain 3 distinct digits.
+
+
+• Double Arrow: The sum of the digits on a line between two circles is equal to the sum of the digits in the circles at either end of the line.
+
+
+• Entropic Lines: Any set of three sequential cells along a beige line must contain a low digit (123), a middle digit (456), and a high digit (789). Digits may repeat on lines, if allowed by other rules.
+• Entropic Lines: Any set of three sequential cells along a beige line must contain a low digit (123), a middle digit (456), and a high digit (789). Digits may repeat on lines, if allowed by other rules. Digits on a two cell entropic line may not be both low, both middle, or both high.
+
+
+Indexing
+• Column Indexing: In any row containing a red cell in column N, the digit N must be placed in the column number equal to the digit placed in that red cell.
+• Row Indexing: In any column containing a green cell in row N, the digit N must be placed in the row number equal to the digit placed in that green cell.
+
+
+• Inequality: The inequality symbol points to the lower of the two digits.
+
+
+• Kropki Pairs: Digits separated by a black dot must be in a 2:1 ratio. Digits separated by a white dot must be consecutive.
+• Kropki: Digits separated by a black dot must be in a 2:1 ratio. Digits separated by a white dot must be consecutive. All dots are given.
+• Ratio Pairs: Digits separated by a black dot must be in a 2:1 ratio.
+• Ratio: Digits separated by a black dot must be in a 2:1 ratio. All black dots are given.
+• Consecutive Pairs: Digits separated by a white dot must be consecutive.
+• Consecutive: Digits separated by a white dot must be consecutive. All white dots are given.
+
+
+• Little Killer: Clues outside the grid with an arrow are the sum of the digits in the cells along the indicated diagonal. Digits may repeat along these diagonals if allowed by other rules.
+
+
+• Lockout Lines: Digits on blue lines can not be between or equal to the digits in the diamonds at the ends of the line. The digits in the diamonds at the ends of a line must differ by at least 4. A diamond terminates a line segment.
+
+
+• Modular Lines: Any set of three sequential cells along a teal line must contain digits with different remainders when divided by 3. i.e. A digit with remainder 1 (147), a digit with remainder 2 (258), and a digit with remainder 0 (369). Digits may repeat on lines, if allowed by other rules.
+
+
+• Nabner: No two digits on a gold line can be consecutive, regardless of their position on the line.
+• Nabner: No two digits on a gold line can be consecutive, regardless of their position on the line. Digits may not repeat on lines.
+
+
+• Numbered Rooms: A clue outside the grid indicates the digit which has to be placed in the Nth cell in the corresponding direction, where N is the digit placed in the first cell in that direction.
+
+
+• Odd/Even: Digits in grey circles must be odd. Digits in grey squares must be even.
+• Odd: Digits in grey circles must be odd.
+• Even: Digits in grey squares must be even.
+
+
+• Outside: Digits outside the grid must appear in one of the first three cells of the row or column as seen from that direction.
+
+
+• Palindromes: Digits on a grey line read the same in either direction.
+
+
+• Parity Lines: Digits on the red lines alternate odd and even parity.
+
+
+• Quadruples: Digits in a Quadruple circle must be placed at least once in the four cells touching that circle.
+• Quadruples: Digits in a Quadruple circle must be placed at least once in the four cells touching that circle. Digits that appear twice in circles must be placed twice in the cells touching that circle.
+
+
+• Renban: Digits placed on purple lines must be a non-repeating set of consecutive digits in any order.
+
+
+• Sandwich: The numbers outside the grid give the sum of the digits between the 1 and the 9 in that row or column.
+
+
+Sum Lines - Boxes
+• Sum Line: Box borders split blue lines into sections, and the digits on those sections must sum to the same value.
+• Sum Line: Box borders split blue lines into sections, and the digits on those sections must sum to the same value. If a line has multiple sections within a box, these sections are summed separately.
+• Sum Line Variant: Box borders split blue lines into sections, and the digits on those sections must sum to the same value. If a line has multiple sections within a box, these sections are summed together.
+
+Sum Lines - Irregular (or boxes if you want)
+• Sum Line: Region borders split blue lines into sections, and the digits on those sections must sum to the same value.
+• Sum Line: Region borders split blue lines into sections, and the digits on those sections must sum to the same value. If a line has multiple sections within a region, these sections are summed separately.
+• Sum Line Variant: Region borders split blue lines into sections, and the digits on those sections must sum to the same value. If a line has multiple sections within a region, these sections are summed together.
+
+
+• Ten Lines: Digits on Ten Line must be divided into one or more non-overlapping sections that each sum to 10. Digits may repeat on Ten Lines if allowed by other rules.
+
+
+• Thermo: Digits on grey thermos must increase from the bulb to the tip.
+• Slow Thermo: Digits on thermos must either increase or stay the same as they progress from the bulb to the tip.
+
+
+• Whispers-5: Adjacent digits on a green line must have a difference of at least 5.
+• German Whispers: Adjacent digits on a green line must have a difference of at least 5.
+
+
+• X-Sums: A number outside the grid gives the sum of the first N digits in that row or column, where N is the digit in the cell closest to the given clue.
+
+
+• XV Pairs: Digits separated by an X sum to 10. Digits separated by a V sum to 5.
+• XV: Digits separated by an X sum to 10. Digits separated by a V sum to 5. All Xs and Vs are given.
+• X Pairs: Digits separated by an X sum to 10.
+• X: Digits separated by an X sum to 10. All Xs are given.
+• V Pairs: Digits separated by a V sum to 5.
+• V: Digits separated by a V sum to 5. All Vs are given.
+
+
+• Zipper Lines: Digits an equal distance from the center of a lavender line must sum to the value in the central cell of the line.
+• Zipper Lines: Digits an equal distance from the center of a lavender line must sum to the same total.
+• Zipper Lines: Digits an equal distance from the center of an odd length lavender line must sum to the value in the central cell of the line. Digits an equal distance from the center of an even length lavender line must sum to the same total.
+
