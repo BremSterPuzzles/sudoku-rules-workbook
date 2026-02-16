@@ -1,4 +1,0 @@
-• Arrow: Digits on an arrow must sum to the digit placed in that arrow's circle.
-• Arrow: Digits on an arrow must sum to the digit placed in that arrow's circle. Digits may repeat on an arrow if allowed by other rules.
-• Arrow: Digits on an arrow must sum to the number placed in that arrow's circle, or pill. The pill number must be read either left right, or top down.
-• Arrow: Digits on an arrow must sum to the number placed in that arrow's circle, or pill. The pill number must be read either left right, or top down. Digits may repeat on an arrow if allowed by other rules.
